@@ -86,5 +86,22 @@ namespace MagicVilla_VillaAPI.Controllers
             VillaStore.VillaList.Remove(villa);
             return NoContent();
         }
+
+        [HttpPut("{id:int}", Name = "UpdateVilla")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public IActionResult UpdateVilla(int id, [FromBody]VillaDTO villaDTO)
+        {
+            if (villaDTO == null || id != villaDTO.Id)
+            {
+                return BadRequest();
+            }
+            var villa = VillaStore.VillaList.FirstOrDefault(u => u.Id == id);
+            villa.Name= villaDTO.Name;
+            villa.Occupancy = villaDTO.Occupancy;
+            villa.Sqtf = villaDTO.Sqtf;
+
+            return NoContent();
+        }
     }
 }
