@@ -11,5 +11,6 @@ namespace MagicVilla_VillaAPI.Models.Dto
         public int Occupancy { get; set; }
         public int Sqtf {  get; set; }
         public DateTime CreatedDate { get; set; }
+        public DateTime UpdatedDate { get; set; }
     }
 }
