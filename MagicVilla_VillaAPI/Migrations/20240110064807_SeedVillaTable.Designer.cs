@@ -4,6 +4,7 @@ using MagicVilla_VillaAPI.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MagicVilla_VillaAPI.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240110064807_SeedVillaTable")]
+    partial class SeedVillaTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -70,7 +73,7 @@ namespace MagicVilla_VillaAPI.Migrations
                         {
                             Id = 1,
                             Amenity = "test",
-                            CreatedDate = new DateTime(2024, 1, 10, 12, 21, 16, 804, DateTimeKind.Local).AddTicks(4208),
+                            CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Details = "gdsyghsabhsvbhhsb",
                             ImageUrl = "https://tk-resume.000webhostapp.com/assets/img/profile1.jpeg",
                             Name = "Tamil",
@@ -83,7 +86,7 @@ namespace MagicVilla_VillaAPI.Migrations
                         {
                             Id = 2,
                             Amenity = "test",
-                            CreatedDate = new DateTime(2024, 1, 10, 12, 21, 16, 804, DateTimeKind.Local).AddTicks(4225),
+                            CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Details = "gdsyghsabhsvbhhsb",
                             ImageUrl = "https://tk-resume.000webhostapp.com/assets/img/profile1.jpeg",
                             Name = "Tamilk",
@@ -96,7 +99,7 @@ namespace MagicVilla_VillaAPI.Migrations
                         {
                             Id = 3,
                             Amenity = "test",
-                            CreatedDate = new DateTime(2024, 1, 10, 12, 21, 16, 804, DateTimeKind.Local).AddTicks(4228),
+                            CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Details = "gdsyghsabhsvbhhsb",
                             ImageUrl = "https://tk-resume.000webhostapp.com/assets/img/profile1.jpeg",
                             Name = "Tamill",
@@ -109,7 +112,7 @@ namespace MagicVilla_VillaAPI.Migrations
                         {
                             Id = 4,
                             Amenity = "test",
-                            CreatedDate = new DateTime(2024, 1, 10, 12, 21, 16, 804, DateTimeKind.Local).AddTicks(4231),
+                            CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Details = "gdsyghsabhsvbhhsb",
                             ImageUrl = "https://tk-resume.000webhostapp.com/assets/img/profile1.jpeg",
                             Name = "Kumaran",
